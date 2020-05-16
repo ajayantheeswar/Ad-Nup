@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="5dp"
+            android:layout_weight="1.4"
+            android:id="@+id/editTextView_monthPicker"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+
+            android:hint="@string/day"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:id="@+id/editTextView_yearPicker"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+
+            android:hint="@string/month"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:id="@+id/button_transaction_query"
+            android:layout_width="wrap_content"
+            android:text="@string/fetch"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/transaction_list_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

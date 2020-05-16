@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ad-Nup</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="label">Name</string>
+    <string name="Amount">Amount</string>
+    <string name="dropDown_hint_text">catagory</string>
+    <string name="day">Month</string>
+    <string name="month">Year</string>
+    <string name="fetch">fetch</string>
+    <string name="update">update</string>
+</resources>
